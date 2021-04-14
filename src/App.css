@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Josefin+Sans'); */
+ /*@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');*/
 :root {
   --primary-blue: #1e90ff;
   --primary-white: #ffffff;
@@ -10,8 +10,9 @@
 
 
 
-body {
-  font-family: 'Roboto Condensed', sans-serif;}
+/*body {*/
+/*  font-family: 'Roboto Condensed', sans-serif !important;*/
+/*}*/
 
 nav {
   z-index: 2;
@@ -134,4 +135,33 @@ nav ul li {
     display: none;
   }
 }
+
+ /***About Me***/
+ .photo-wrap {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .profile-img {
+   width: 16rem;
+   height: 16rem;
+   border-radius: 50%;
+   padding: .3rem;
+   border: 1px solid var(--primary-orange);
+ }
+
+ .about-heading {
+   color: var(--primary-orange);
+   text-transform: uppercase;
+ }
+ @media(max-width: 468px) {
+   .profile-img {
+     width: 10rem;
+     height: auto;
+   }
+   .about-heading {
+     text-align: center;
+   }
+ }
 
