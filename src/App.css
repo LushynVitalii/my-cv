@@ -2,8 +2,9 @@
 :root {
   --primary-blue: #1e90ff;
   --primary-white: #ffffff;
+  --primary-light-gray: #f4f4f4;
   --primary-orange: #f9ab00;
-  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-dark: rgb(55, 58, 33);
   --primary-red: #ef4035;
   --primary-hover-red:#f33501;
 }
@@ -163,5 +164,54 @@ nav ul li {
    .about-heading {
      text-align: center;
    }
+ }
+
+
+ /***Portfolio***/
+ .portfolio {
+   text-align: center;
+   padding-bottom: 2rem;
+   background: var(--primary-light-gray);
+ }
+ .portfolio h1 {
+   text-transform: uppercase;
+ }
+ .portfolio h3 {
+   color: var(--primary-dark);
+ }
+ .portfolio .circle {
+   position: relative;
+   margin: 0.4rem auto;
+   background: var(--primary-orange);
+   border-radius: 50%;
+   width: 3.125rem;
+   height: 3.125rem;
+ }
+ .portfolio .icon {
+   font-size: 1.4rem;
+   color: var(--primary-white);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+ .portfolio .box {
+   height: 16rem;
+   border-bottom: 0.3125rem solid var(--primary-orange);
+   padding: 0.625rem;
+   margin-bottom: 1.875rem;
+   background: var(--primary-white);
+ }
+ .portfolio .box:hover {
+   background: var(--primary-orange);
+   border-bottom: 0.3125rem solid var(--primary-dark);
+   transition: .5s ease-out;
+ }
+ .portfolio .box:hover .icon {
+   color: var(--primary-dark);
+
+ }
+ .portfolio .box:hover .circle {
+   background: var(--primary-white);
  }
 
