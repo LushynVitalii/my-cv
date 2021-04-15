@@ -6,6 +6,7 @@ import Particles from "react-particles-js"
 import AboutMe from "./components/AboutMe"
 import Portfolio from "./components/Portfolio"
 import Experience from "./components/Experience"
+import ContactMe from "./components/ContactMe"
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <AboutMe />
           <Portfolio />
           <Experience />
+          <ContactMe />
       </>
   );
 };
