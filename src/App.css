@@ -57,7 +57,7 @@ nav ul li {
 }
 
 /* use for navs for dif pages .  need to use a:focus*/
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
   border-top: 0.19rem solid var(--primary-orange);
 
 }
@@ -73,7 +73,7 @@ nav ul li {
   position: relative;
   background: url('./images/mainpic.jpg') center no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -411,6 +411,29 @@ nav ul li {
      .contacts p {
          padding: 0 0.4rem;
      }
+ }
+
+ /***Footer***/
+
+ .footer {
+     background: var(--primary-dark);
+     color: var(--primary-dark-gray);
+     padding: 3rem;
+ }
+
+ .footer a {
+     text-decoration: none;
+     color: var(--primary-dark-gray)
+ }
+
+ .footer a:hover {
+     text-decoration: none;
+     color: var(--primary-orange);
+     cursor: pointer;
+ }
+
+ .footer p {
+     margin-bottom: 0;
  }
 
 

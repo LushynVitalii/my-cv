@@ -5,7 +5,7 @@ import {faDesktop, faFileCode} from "@fortawesome/free-solid-svg-icons"
 
 const Portfolio = () => {
     return (
-        <div className='portfolio'>
+        <div id='portfolio' className='portfolio'>
             <div className="py-5">
                 <div className="container">
                     <h1 className='mb-5'>Portfolio</h1>
