@@ -7,6 +7,7 @@
   --primary-light-gray: #f4f4f4;
   --primary-orange: #f9ab00;
   --primary-dark: rgb(52, 58, 64);
+  --primary-green: rgb(19, 94, 19);
   --primary-red: #ef4035;
   --primary-hover-red:#f33501;
 }
@@ -70,9 +71,8 @@ nav ul li {
 
 .header-wrapper{
   position: relative;
-  background: url('./images/mainpic.jpg') no-repeat;
+  background: url('./images/mainpic.jpg') center no-repeat;
   background-size: cover;
-  background-position: center;
   height: 90vh;
 }
 
@@ -354,7 +354,7 @@ nav ul li {
  }
 
  .contacts textarea {
-     height: 13.5rem !important;
+     height: 13.55rem !important;
      margin: 2rem 0;
  }
 
@@ -366,7 +366,6 @@ nav ul li {
 
  .line {
      position: relative;
-
      width: 0;
      height: 0.125rem;
      background: var(--primary-orange);
@@ -378,11 +377,22 @@ nav ul li {
      transition: width 1s ease-in-out;
      top: -1.65rem;
  }
+
  textarea:focus+.line {
      width: 100%;
      transition: width 1s ease-in-out;
      top: -3.05rem;
  }
+
+.error-message {
+     color: var(--primary-red);
+ }
+
+.success-message {
+    color: var(--primary-green);
+    font-size: 2rem;
+    background: var(--primary-gray);
+}
 
  /*input.form-control, textarea.form-control {*/
  /*    margin: -0.3rem 0;*/
