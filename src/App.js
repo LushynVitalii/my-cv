@@ -10,6 +10,8 @@ import ContactMe from "./components/ContactMe"
 import Footer from "./components/Footer"
 
 function App() {
+
+
   return (
       <>
       <Particles className='particles-canvas'
@@ -39,6 +41,6 @@ function App() {
           <Footer />
       </>
   );
-};
+}
 
 export default App;

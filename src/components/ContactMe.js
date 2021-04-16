@@ -124,7 +124,6 @@ const ContactMe = () => {
                     <div className="col-md-6 col-xs-12">
                         <div>
                         <textarea
-                            type='text'
                             className='form-control'
                             placeholder='Type here your message'
                             name='message'
