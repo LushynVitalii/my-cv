@@ -5,7 +5,7 @@ import {useForm} from 'react-hook-form'
 const ContactMe = () => {
 
     const [successMessage, setSuccessMessage] = useState('')
-    const {register, handleSubmit, formState: { errors } } = useForm()
+    const {register, handleSubmit, formState: { errors }, reset } = useForm()
 
     const serviceID = 'service_ID';
     const templateId = 'template_ID';
@@ -25,6 +25,7 @@ const ContactMe = () => {
             userID
         )
         r.target.reset();
+        reset();
     }
 
     const sendEmail = (serviceID, templateId, variables, userID) => {
@@ -32,8 +33,9 @@ const ContactMe = () => {
         emailJs.send(serviceID, templateId, variables, userID)
             .then(() => {
                 setSuccessMessage('Your message was sent! I will contact you as soon as possible');
-                // alert('Message was sent')
-            }).catch(err => console.error(err));
+            }).then(() => {
+                setTimeout(() => setSuccessMessage(''), 10000);
+        }).catch(err => console.error(err));
     }
 
 
@@ -59,7 +61,7 @@ const ContactMe = () => {
                                      pattern:{
 
                                       value:/[A-Za-z]{3,20}/,
-                                         message: 'Name must be between 2 and 20 characters'
+                                         message: 'Name must be between 3 and 20 characters'
                                      }
                              })}
                         />
@@ -74,11 +76,7 @@ const ContactMe = () => {
                             placeholder='Phone Number'
                             name='phone'
                             {...register('phone',{
-                                required: false,
-                                pattern:{
-                                    value:/^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/,
-                                    message: 'Telephone must look like 123 456 7890'
-                                }
+                                required: false
                             })}
                             />
                         <div className="line"></div>

@@ -348,7 +348,7 @@ nav ul li {
  }
 
  .contacts input:focus, .contacts textarea:focus {
-     background: transparent !important;
+     background: var(--primary-dark) !important;
      color: var(--primary-orange);
      border-bottom: 0.125rem solid var(--primary-dark-gray);
  }
@@ -356,6 +356,31 @@ nav ul li {
  .contacts textarea {
      height: 13.55rem !important;
      margin: 2rem 0;
+ }
+
+ /*@-webkit-keyframes autofill {*/
+ /*    0%,100% {*/
+ /*        color: var(--primary-orange);*/
+ /*        background: var(--primary-dark);*/
+ /*    }*/
+ /*}*/
+ /*input:-webkit-autofill:focus, input:-webkit-autofill {*/
+ /*    -webkit-text-fill-color: var(--primary-orange) !important;*/
+ /*    -webkit-background-composite: var(--primary-dark) !important;*/
+
+ /*}*/
+ input:-webkit-autofill,
+ input:-webkit-autofill:hover,
+ input:-webkit-autofill:focus,
+ textarea:-webkit-autofill,
+ textarea:-webkit-autofill:hover,
+ textarea:-webkit-autofill:focus,
+ select:-webkit-autofill,
+ select:-webkit-autofill:hover,
+ select:-webkit-autofill:focus {
+     -webkit-text-fill-color: var(--primary-orange);
+     /*-webkit-box-shadow: 0 0 0px 1000px #000 inset;*/
+     transition: background-color 5000s ease-in-out 0s;
  }
 
  .contact-btn {
