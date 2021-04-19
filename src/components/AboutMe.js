@@ -1,20 +1,21 @@
 import React from 'react'
-import Author from '../images/my-photo.jpeg'
+import Author from '../images/my-photo.png'
 
 const AboutMe = () => {
     return (
-        <div id='about' className='container py-5'>
+        <div id='about' className='container py-5 mt-5'>
             <div className="row">
-                <div className="col-lg-6 col-xm-12">
+                <div className="col-lg-6 col-xm-12 mt-5">
                     <div className="photo-wrap mb-5">
                     <img className='profile-img'  src={Author} alt=""/>
                     </div>
                 </div>
-                <div className="col-lg-6 col-xm-12">
-                    <h1 className='about-heading'>about me</h1>
+                <div className="col-lg-6 col-xm-12 text-center">
+                    <h1 className='about-heading mb-5'>about me</h1>
+                    <p>A full-stack web developer who is motivated by challenges. Positive, energetic and eager to learn to accomplish the set goal. Able to bring my experience to your company where I can contribute to designing and developing successful software. With several years of experience working for an international company, I understand the importance of high standards.</p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus, animi, beatae consequatur cum deleniti ea eligendi harum id impedit incidunt inventore natus odio officia quas quisquam saepe, sed voluptates. Consectetur eaque excepturi facilis non porro quae quasi quia quod ut voluptatem. Assumenda consequatur cupiditate debitis ducimus exercitationem fugit, ipsam ipsum iusto laudantium nam natus neque nihil nostrum nulla possimus quam quis quos rem repellat repellendus saepe sapiente vel velit, veniam voluptate. Ex fuga ipsa iste magni molestias natus veritatis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae cumque in iure? Aut consequuntur ducimus ea earum eveniet magnam possimus quas sequi vitae voluptates. Amet beatae consectetur deserunt dignissimos error eveniet fuga, ipsum iure necessitatibus nisi odit officia optio quibusdam quidem rerum sint totam ut? Blanditiis, dolores expedita facilis fuga maxime non, nulla quam quo suscipit tempore temporibus totam. Architecto, aspernatur cum debitis deserunt et expedita illum ipsum maiores minus nisi nobis odio optio qui tempora vero vitae voluptatem!
-                    </p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aspernatur autem consectetur delectus dignissimos dolorem esse eum excepturi fugit, necessitatibus nisi obcaecati porro possimus quas reiciendis reprehenderit rerum vel.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aut cum doloremque eligendi eos error eveniet facilis illum inventore laudantium molestias mollitia necessitatibus pariatur perferendis, quasi sequi sunt voluptate! Alias et fuga placeat praesentium.</p>
                 </div>
             </div>
         </div>

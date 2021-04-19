@@ -10,8 +10,11 @@ const Experience = () => {
                 <div className="timeline-block timeline-block-right">
                     <div className="marker"></div>
                     <div className="timeline-content">
-                        <h3>2018-2019</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta harum incidunt laborum maxime, minima nisi non odio omnis pariatur quae repudiandae saepe similique tempore, tenetur ullam velit veritatis voluptate voluptates voluptatum? Dolores eius et eveniet laboriosam obcaecati porro, velit?</p>
+                        <h3>2017-2019</h3>
+                        <p><b>Freelancer, 1 year  8 months </b><br/><br/>Ukraine<br/>
+                            Developing and maintaining websites using<br/>
+                            HTML, CSS and JavaScript.<br/>
+                            Troubleshooting website problems</p>
                     </div>
                 </div>
 
@@ -20,7 +23,11 @@ const Experience = () => {
                     <div className="marker"></div>
                     <div className="timeline-content">
                         <h3>2008-2018</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta harum incidunt laborum maxime, minima nisi non odio omnis pariatur quae repudiandae saepe similique tempore, tenetur ullam velit veritatis voluptate voluptates voluptatum? Dolores eius et eveniet laboriosam obcaecati porro, velit?</p>
+                        <p> <b>Service Technician, 10 years</b> <br/><br/>Ukraine<br/>
+                            Examination, testing and analysis of malfunctions<br/>
+                            Providing assistance and service of equipment<br/>
+                            Supervise employee's work</p>
+
                     </div>
                 </div>
 
@@ -28,7 +35,11 @@ const Experience = () => {
                     <div className="marker"></div>
                     <div className="timeline-content">
                         <h3>2005-2008</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta harum incidunt laborum maxime, minima nisi non odio omnis pariatur quae repudiandae saepe similique tempore, tenetur ullam velit veritatis voluptate voluptates voluptatum? Dolores eius et eveniet laboriosam obcaecati porro, velit?</p>
+                        <p> <b>Process operator, 3 years 6 months</b><br/><br/>
+                            Ukraine<br/>
+                            Japan Tobacco International,<br/>
+                            Quality Control according to High Standards JTI Company</p>
+
                     </div>
                 </div>
             </div>

@@ -34,7 +34,7 @@ const ContactMe = () => {
             .then(() => {
                 setSuccessMessage('Your message was sent! I will contact you as soon as possible');
             }).then(() => {
-                setTimeout(() => setSuccessMessage(''), 10000);
+                setTimeout(() => setSuccessMessage(''), 5000);
         }).catch(err => console.error(err));
     }
 
@@ -43,10 +43,10 @@ const ContactMe = () => {
         <div id='contacts' className="contacts">
             <div className="text-center">
             <h1>contact me</h1>
-            <p>Please fill out the form and I will contact you as soon as possible</p>
-                <span className='success-message'>{successMessage}</span>
+            <p>Please fill out the form to send me a message</p>
+                <span id='success-message-span' className='success-message'>{successMessage}</span>
             </div>
-            <div className="container">
+            <div className="container p-1">
                 <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="row">
                     <div className="col-md-6 col-xs-12">
