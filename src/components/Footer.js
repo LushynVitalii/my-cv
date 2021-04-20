@@ -49,7 +49,6 @@ const Footer = () => {
 
                     <div className=" col-md-4 mb-5 align-items-center">
                         <div className="d-flex justify-content-center mb-3">
-
                             <FacebookShareButton
                                 url={'https://www.facebook.com/vitaliy.flex'}
                                 quote={'My Facebook account'}>
