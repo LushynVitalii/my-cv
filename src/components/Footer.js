@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div id='footer' className='footer'>
             <div className="container ">
                 <div className='row justify-content-center'>
                     <div id='footer-contact' className="col-md-4 text-center mb-5">

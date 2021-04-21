@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:wgt@300&display=swap');
+ /*@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:wgt@300&display=swap');*/
 :root {
   --primary-blue: #1e90ff;
   --primary-white: #ffffff;
@@ -14,13 +14,18 @@
 
 
 
-body {
-  font-family: 'Roboto Condensed', sans-serif !important;
-}
+/*body {*/
+/*  font-family: 'Roboto Condensed', sans-serif !important;*/
+/*}*/
 
 nav {
   z-index: 2;
 }
+
+ #container-navbar {
+     max-width: 1300px;
+ }
+
 .logo {
   width: 14rem;
   height: 6rem;
@@ -338,6 +343,7 @@ nav ul li {
  .contacts {
      background: var(--primary-dark);
      padding: 3rem 0;
+     height: 100%;
  }
 
  .contacts h1 {
@@ -476,6 +482,13 @@ nav ul li {
 
  .footer p {
      margin-bottom: 0;
+ }
+
+ @media(min-width: 768px) {
+
+     #footer {
+         height: 160px;
+     }
  }
 
 
