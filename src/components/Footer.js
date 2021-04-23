@@ -1,19 +1,23 @@
 import React from 'react'
-import {
-    FacebookShareButton,
-    FacebookIcon,
-    LinkedinIcon,
-    LinkedinShareButton,
-    TelegramShareButton,
-    TelegramIcon
-} from 'react-share'
+import {FaFacebook, FaLinkedin, FaTelegram} from 'react-icons/fa'
+import {IconContext} from "react-icons"
+// import {
+//     FacebookShareButton,
+//     FacebookIcon,
+//     LinkedinIcon,
+//     LinkedinShareButton,
+//     TelegramShareButton,
+//     TelegramIcon
+// } from 'react-share'
 // import {Link} from 'react-scroll'
 
 const Footer = () => {
+
     return (
+        <IconContext.Provider value={{size:'2em'}} >
         <div id='footer' className='footer'>
             <div className="container ">
-                <div className='row justify-content-center'>
+                <div className='row justify-content-around'>
                     <div id='footer-contact' className="col-md-4 text-center mb-5">
                         <div >
                             <p>City Montreal H4E 2B3</p>
@@ -25,6 +29,7 @@ const Footer = () => {
                             <a href="mailto:vitalii.lushyn@gmail.com?">vitalii.lushyn@gmail.com</a>
                         </div>
                     </div>
+
 
 
                     {/*<div className="col-sm-2">*/}
@@ -49,23 +54,32 @@ const Footer = () => {
 
                     <div className=" col-md-4 mb-5 align-items-center">
                         <div className="d-flex justify-content-center mb-3">
-                            <FacebookShareButton
-                                url={'https://www.facebook.com/vitaliy.flex'}
-                                quote={'My Facebook account'}>
-                                <FacebookIcon className='mx-3' round={true} size={36} />
-                            </FacebookShareButton>
 
-                            <LinkedinShareButton
-                                url={'https://www.linkedin.com/in/vitalii-lushyn-bb6731a5/'}
-                                quote={'My LinkedIn account'}>
-                                <LinkedinIcon className='mx-3' round={true} size={36} />
-                            </LinkedinShareButton>
+                           <a className='m-2' href='https://www.facebook.com/vitaliy.flex' target="_blank" rel="noopener noreferrer" title="My Facebook account"><FaFacebook id='fb-icon'/></a>
 
-                            <TelegramShareButton
-                                url={'https://t.me/@Vitalii_Lushyn'}
-                                quote={'My Telegram account'}>
-                                <TelegramIcon className='mx-3' round={true} size={36} />
-                            </TelegramShareButton>
+                           <a className='m-2' href='https://www.linkedin.com/in/vitalii-lushyn-bb6731a5/' rel="noopener noreferrer" target="_blank" title="My Linkedin account"><FaLinkedin  id='linid-icon' /></a>
+
+                           <a className='m-2' href='https://t.me/@Vitalii_Lushyn' rel="noopener noreferrer" target="_blank" title="My Telegram account"> <FaTelegram id='teleg-icon' /></a>
+
+
+
+                            {/*<FacebookShareButton*/}
+                            {/*    url={'https://www.facebook.com/vitaliy.flex'}*/}
+                            {/*    quote={'My Facebook account'}>*/}
+                            {/*    <FacebookIcon className='mx-3' round={true} size={36} />*/}
+                            {/*</FacebookShareButton>*/}
+
+                            {/*<LinkedinShareButton*/}
+                            {/*    url={'https://www.linkedin.com/in/vitalii-lushyn-bb6731a5/'}*/}
+                            {/*    quote={'My LinkedIn account'}>*/}
+                            {/*    <LinkedinIcon className='mx-3' round={true} size={36} />*/}
+                            {/*</LinkedinShareButton>*/}
+
+                            {/*<TelegramShareButton*/}
+                            {/*    url={'https://t.me/@Vitalii_Lushyn'}*/}
+                            {/*    quote={'My Telegram account'}>*/}
+                            {/*    <TelegramIcon className='mx-3' round={true} size={36} />*/}
+                            {/*</TelegramShareButton>*/}
                         </div>
                             <div className="text-center">Created with React.js</div>
 
@@ -74,6 +88,7 @@ const Footer = () => {
             </div>
 
         </div>
+        </IconContext.Provider>
     );
 };
 

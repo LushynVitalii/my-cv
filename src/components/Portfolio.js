@@ -14,23 +14,23 @@ const Portfolio = () => {
                         <div className="col-md-4 col-sm-12">
                             <div className="box">
                                <div className="circle"><FontAwesomeIcon className='icon' icon={faDesktop} size='2x' /></div>
-                                <h3 className='mt-4'>My future project 1</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                <h3 className='mt-4'>My project 1</h3>
+                                <p>This project will be added soon</p>
                             </div>
                         </div>
                         <div className="col-md-4 col-sm-12">
                             <div className="box">
                                 <div className="circle"><FontAwesomeIcon className='icon' icon={faFileCode} size='2x'/></div>
-                                <h3 className='mt-4'>My future project 2</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                <h3 className='mt-4'>My project 2</h3>
+                                <p>This project will be added soon </p>
 
                             </div>
                         </div>
                         <div className="col-md-4 col-sm-12">
                             <div className="box">
                                 <div className="circle"><FontAwesomeIcon className='icon' icon={faGoogle} size='2x'/></div>
-                                <h3 className='mt-4'>My future project 3</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                <h3 className='mt-4'>My project 3</h3>
+                                <p>This project will be added soon </p>
 
                             </div>
                         </div>
