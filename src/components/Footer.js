@@ -20,7 +20,7 @@ const Footer = () => {
                 <div className='row justify-content-around'>
                     <div id='footer-contact' className="col-md-4 text-center mb-5">
                         <div >
-                            <p>City Montreal H4E 2B3</p>
+                            <p>Montreal, QC H4E 2B3</p>
                         </div>
                         <div >
                             <a href='tel:+1 514-617-5780'>Tel. +1 514-617-5780</a>
@@ -55,11 +55,11 @@ const Footer = () => {
                     <div className=" col-md-4 mb-5 align-items-center">
                         <div className="d-flex justify-content-center mb-3">
 
-                           <a className='m-2' href='https://www.facebook.com/vitaliy.flex' target="_blank" rel="noopener noreferrer" title="My Facebook account"><FaFacebook id='fb-icon'/></a>
+                           <a className='m-3' href='https://www.facebook.com/vitaliy.flex' target="_blank" rel="noopener noreferrer" title="My Facebook account"><FaFacebook id='fb-icon'/></a>
 
-                           <a className='m-2' href='https://www.linkedin.com/in/vitalii-lushyn-bb6731a5/' rel="noopener noreferrer" target="_blank" title="My Linkedin account"><FaLinkedin  id='linid-icon' /></a>
+                           <a className='m-3' href='https://www.linkedin.com/in/vitalii-lushyn-bb6731a5/' rel="noopener noreferrer" target="_blank" title="My Linkedin account"><FaLinkedin  id='linid-icon' /></a>
 
-                           <a className='m-2' href='https://t.me/@Vitalii_Lushyn' rel="noopener noreferrer" target="_blank" title="My Telegram account"> <FaTelegram id='teleg-icon' /></a>
+                           <a className='m-3' href='https://t.me/@Vitalii_Lushyn' rel="noopener noreferrer" target="_blank" title="My Telegram account"> <FaTelegram id='teleg-icon' /></a>
 
 
 

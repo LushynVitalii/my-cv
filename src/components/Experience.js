@@ -11,7 +11,8 @@ const Experience = () => {
                     <div className="marker"></div>
                     <div className="timeline-content">
                         <h3>2017-2019</h3>
-                        <p><b>Freelancer, 1 year  8 months </b><br/><br/>Ukraine<br/>
+                        <h5 className='mb-2 text-dark'>Freelancer, 1 year  8 months </h5>
+                        <p>Ukraine<br/>
                             Developing and maintaining websites using<br/>
                             HTML, CSS and JavaScript.<br/>
                             Troubleshooting website problems</p>
@@ -23,7 +24,8 @@ const Experience = () => {
                     <div className="marker"></div>
                     <div className="timeline-content">
                         <h3>2008-2018</h3>
-                        <p> <b>Service Technician, 10 years</b> <br/><br/>Ukraine<br/>
+                        <h5 className='mb-2 text-dark'>Service Technician, 10 years</h5>
+                        <p>Ukraine<br/>
                             Examination, testing and analysis of malfunctions<br/>
                             Providing assistance and service of equipment<br/>
                             Supervise employee's work</p>
@@ -35,8 +37,8 @@ const Experience = () => {
                     <div className="marker"></div>
                     <div className="timeline-content">
                         <h3>2005-2008</h3>
-                        <p> <b>Process operator, 3 years 6 months</b><br/><br/>
-                            Ukraine<br/>
+                         <h5 className='mb-2 text-dark'>Process operator, 3 years 6 months</h5>
+                        <p>Ukraine<br/>
                             Japan Tobacco International,<br/>
                             Quality Control according to High Standards JTI Company</p>
 

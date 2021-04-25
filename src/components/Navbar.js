@@ -39,14 +39,14 @@ const Navbar = () => {
                             <Link smooth={true} to='about' onClick={hideNav} offset={-110} className="nav-link"  href='#'>About me</Link>
                         </li>
                         <li className="nav-item">
-                            <Link smooth={true} to='portfolio' onClick={hideNav} offset={-110} className="nav-link" href='#'>Portfolio</Link>
+                            <Link smooth={true} to='portfolio' onClick={hideNav} offset={-100} className="nav-link" href='#'>Portfolio</Link>
                         </li>
                         <li className="nav-item">
                             <Link smooth={true} to='experience' onClick={hideNav} offset={-150} className="nav-link" href='#'>Experience</Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link smooth={true} to='contacts' onClick={hideNav} offset={-110} className="nav-link" href='#'>Contacts</Link>
+                            <Link smooth={true} to='contacts' onClick={hideNav} offset={-70} className="nav-link" href='#'>Contacts</Link>
                         </li>
 
                     </ul>

@@ -1,4 +1,3 @@
-
 :root {
   --primary-blue: #1e90ff;
   --primary-white: #ffffff;
@@ -12,11 +11,8 @@
   --primary-hover-red:#f33501;
 }
 
-
-
 body {
   font-family: 'Nunito', sans-serif !important;
-
 }
 
 nav {
@@ -63,14 +59,13 @@ nav ul li {
 }
 
 /* use for navs for dif pages .  need to use a:focus*/
-.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
   border-top: 0.19rem solid var(--primary-orange);
 
 }
 
 .navbar-nav > li > a:hover {
   border-top: 0.19rem solid var(--primary-orange);
-
 }
 
 /***HEADER***/
@@ -128,7 +123,7 @@ nav ul li {
   color: var(--primary-white);
   text-decoration: none;
   background-color: var(--primary-hover-red);
-  transition: .3s ease-out;
+  transition: .7s ease;
 }
 
 /***Particles***/
@@ -150,7 +145,6 @@ nav ul li {
    display: flex;
    justify-content: center;
    align-items: center;
-
  }
 
  #about {
@@ -169,16 +163,27 @@ nav ul li {
    color: var(--primary-orange);
    text-transform: uppercase;
  }
+
+#about-me-parag {
+    line-height: 1.7em;
+}
+
  @media(max-width: 768px) {
    .profile-img {
-     width: 10rem;
+     width: 13rem;
      height: auto;
    }
+
    .about-heading {
      text-align: center;
    }
+
      #about {
          height: auto;
+     }
+
+     #about-me-parag {
+         line-height: 1.3em;
      }
  }
 
@@ -190,12 +195,13 @@ nav ul li {
    padding-bottom: 2rem;
    background: var(--primary-light-gray);
      height: 100vh;
-
  }
+
  .portfolio h1 {
    color: var(--primary-orange);
    text-transform: uppercase;
  }
+
  #projectsWrapper {
      margin-top: 10rem;
  }
@@ -203,6 +209,7 @@ nav ul li {
  .portfolio h3 {
    color: var(--primary-dark);
  }
+
  .portfolio .circle {
    position: relative;
    margin: 0.4rem auto;
@@ -211,6 +218,7 @@ nav ul li {
    width: 3.125rem;
    height: 3.125rem;
  }
+
  .portfolio .icon {
    font-size: 1.4rem;
    color: var(--primary-white);
@@ -219,6 +227,7 @@ nav ul li {
    left: 50%;
    transform: translate(-50%, -50%);
  }
+
  .portfolio .box {
    height: 16rem;
    border-bottom: 0.3125rem solid var(--primary-orange);
@@ -226,14 +235,17 @@ nav ul li {
    margin-bottom: 1.875rem;
    background: var(--primary-white);
  }
+
  .portfolio .box:hover {
    background: var(--primary-orange);
    border-bottom: 0.3125rem solid var(--primary-dark);
    transition: .5s ease-out;
  }
+
  .portfolio .box:hover .icon {
    color: var(--primary-dark);
  }
+
  .portfolio .box:hover .circle {
    background: var(--primary-white);
  }
@@ -246,7 +258,6 @@ nav ul li {
          margin-top: 2rem;
      }
  }
-
 
  /***Experience***/
 
@@ -352,6 +363,7 @@ nav ul li {
      padding: 1.3rem 0;
      text-transform: uppercase;
  }
+
  .contacts p {
      color: var(--primary-light-gray);
      font-size: 1.3rem;
@@ -471,6 +483,11 @@ color: #2867B2;
 
 #teleg-icon {
     color: #0088cc;
+}
+
+#fb-icon:hover, #linid-icon:hover, #teleg-icon:hover {
+    color: var(--primary-gray);
+    transition: .7s ease-in-out;
 }
 
  .footer {
