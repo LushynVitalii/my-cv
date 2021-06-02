@@ -34,7 +34,7 @@ const ContactMe = () => {
             .then(() => {
                 setSuccessMessage('Your message was sent! I will contact you as soon as possible');
             }).then(() => {
-                setTimeout(() => setSuccessMessage(''), 5000);
+                setTimeout(() => setSuccessMessage(''), 10000);
         }).catch(err => console.error(err));
     }
 

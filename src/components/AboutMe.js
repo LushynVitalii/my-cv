@@ -1,5 +1,5 @@
 import React from 'react'
-import Author from '../images/my-photo.png'
+import Author from '../images/my-photo.webp'
 
 const AboutMe = () => {
     return (

@@ -72,7 +72,7 @@ nav ul li {
 
 .header-wrapper{
   position: relative;
-  background: url('./images/mainpic.jpg') center no-repeat;
+  background: url('./images/mainpic.webp') center no-repeat;
   background-size: cover;
   height: 100vh;
 }
@@ -475,19 +475,21 @@ nav ul li {
 
 #fb-icon {
     color: #4267B2;
+    transition: color .7s ease-in-out;
 }
 
 #linid-icon {
 color: #2867B2;
+    transition: color .7s ease-in-out;
 }
 
 #teleg-icon {
     color: #0088cc;
+    transition: color .7s ease-in-out;
 }
 
 #fb-icon:hover, #linid-icon:hover, #teleg-icon:hover {
     color: var(--primary-gray);
-    transition: .7s ease-in-out;
 }
 
  .footer {
