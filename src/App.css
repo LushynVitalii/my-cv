@@ -11,6 +11,14 @@
   --primary-hover-red:#f33501;
 }
 
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+    font-display: swap;
+}
+
 body {
   font-family: 'Nunito', sans-serif !important;
 }
@@ -45,11 +53,11 @@ nav ul li {
   border-top: 0.19rem solid var(--dark);
 }
 
-.navbar-brand {
+/* .navbar-brand { */
   /*max-width: 17rem;*/
   /*padding: 0 !important;*/
   /*height: 6rem !important;*/
-}
+/* } */
 
 @media (max-width: 768px) {
   .logo {
@@ -265,6 +273,7 @@ nav ul li {
    position: relative;
    padding: 3.125rem 0;
    overflow: auto;
+   height: 90vh;
  }
 
  .experience h1 {

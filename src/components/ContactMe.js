@@ -28,9 +28,9 @@ const ContactMe = () => {
         reset();
     }
 
-    const sendEmail = (serviceID, templateId, variables, userID) => {
+    const sendEmail = (serviceid, templateid, variables, userid) => {
 
-        emailJs.send(serviceID, templateId, variables, userID)
+        emailJs.send(serviceid, templateid, variables, userid)
             .then(() => {
                 setSuccessMessage('Your message was sent! I will contact you as soon as possible');
             }).then(() => {
@@ -43,7 +43,7 @@ const ContactMe = () => {
         <div id='contacts' className="contacts">
             <div className="text-center">
             <h1>contact me</h1>
-            <p>Please fill out the form to send me a message</p>
+            <p style={{margin: 40}}>Please fill out the form to send me a message</p>
                 <span id='success-message-span' className='success-message'>{successMessage}</span>
             </div>
             <div className="container p-1">
@@ -59,7 +59,6 @@ const ContactMe = () => {
                             {...register('name',{
                                     required: 'Please enter your name',
                                      pattern:{
-
                                       value:/[A-Za-z]{3,20}/,
                                          message: 'Name must be between 3 and 20 characters'
                                      }
