@@ -53,12 +53,6 @@ nav ul li {
   border-top: 0.19rem solid var(--dark);
 }
 
-/* .navbar-brand { */
-  /*max-width: 17rem;*/
-  /*padding: 0 !important;*/
-  /*height: 6rem !important;*/
-/* } */
-
 @media (max-width: 768px) {
   .logo {
     width: 7rem;
@@ -155,10 +149,6 @@ nav ul li {
    align-items: center;
  }
 
- #about {
-     height: 100vh;
- }
-
  .profile-img {
    width: 20rem;
    height: 20rem;
@@ -200,9 +190,8 @@ nav ul li {
 
  .portfolio {
    text-align: center;
-   padding-bottom: 2rem;
+   padding-bottom: 3rem;
    background: var(--primary-light-gray);
-     height: 100vh;
  }
 
  .portfolio h1 {
@@ -211,7 +200,7 @@ nav ul li {
  }
 
  #projectsWrapper {
-     margin-top: 10rem;
+     margin-top: 7rem;
  }
 
  .portfolio h3 {
@@ -250,6 +239,44 @@ nav ul li {
    transition: .5s ease-out;
  }
 
+  .portfolio-proj1 {
+  position: absolute;
+  width: calc(100% - 30px);
+  height: 15.75rem;
+  top: 0;
+  left: 15px;
+  z-index: 2;
+  background-image: url('./images/project1.webp');
+  background-color: var(--primary-gray);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  opacity: 0;
+ }
+ .portfolio-proj2 {
+  position: absolute;
+  width: calc(100% - 30px);
+  height: 15.75rem;
+  top: 0;
+  left: 15px;
+  z-index: 2;
+  background-image: url('./images/project2.webp');
+  background-color: var(--primary-gray);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  opacity: 0;
+ }
+
+ .project__card1:hover .portfolio-proj1, .project__card2:hover .portfolio-proj2 {
+  opacity: 1;
+  transition: all .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -ms-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+}
+
  .portfolio .box:hover .icon {
    color: var(--primary-dark);
  }
@@ -257,6 +284,10 @@ nav ul li {
  .portfolio .box:hover .circle {
    background: var(--primary-white);
  }
+
+ .portfolio a:hover {
+  text-decoration: none;
+}
 
  @media(max-width: 768px) {
     .portfolio {
@@ -273,7 +304,6 @@ nav ul li {
    position: relative;
    padding: 3.125rem 0;
    overflow: auto;
-   height: 90vh;
  }
 
  .experience h1 {
@@ -379,7 +409,6 @@ nav ul li {
  }
 
  .contacts input, .contacts textarea {
-
      width: 100%;
      box-sizing: border-box;
      background: none;
@@ -391,7 +420,6 @@ nav ul li {
      outline: 0 !important;
      box-shadow: none !important;
      margin-bottom: 0.55rem;
-     /*padding-left: 0 !important;*/
  }
 
  .contacts .container {
@@ -408,7 +436,6 @@ nav ul li {
      height: 13.6rem !important;
      margin: 2rem 0;
  }
-
 
  input:-webkit-autofill,
  input:-webkit-autofill:hover,
@@ -460,10 +487,6 @@ nav ul li {
     font-size: 2rem;
     background: var(--primary-gray);
 }
-
- /*input.form-control, textarea.form-control {*/
- /*    margin: -0.3rem 0;*/
- /*}*/
 
  @media(max-width: 768px) {
 
