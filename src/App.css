@@ -131,18 +131,27 @@ nav ul li {
 
 /***Main offer Button***/
 .btn-main-offer {
-  border: 1px solid var(--primary-red);
+  border: 2px solid;
+  border-image: linear-gradient(150deg, #dfd242, #ec6218, #4d9f0c) 10;
   text-transform: uppercase;
   border-radius: 0.4rem;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
   margin: 2rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
 }
 .btn-main-offer:hover {
   color: var(--primary-white);
   text-decoration: none;
-  background-color: var(--primary-hover-red);
-  transition: 0.7s ease;
+  background-color: var(--primary-dark-gray);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
 /***Particles***/

@@ -5,8 +5,24 @@ const Experience = () => {
     <div id="experience" className="experience">
       <div className="d-flex justify-content-center my-5">
         <h1>Experience</h1>
-      </div>
-      <div className="container experience-wrapper">
+          </div>  
+          <div className="container experience-wrapper">
+              
+          <div className="timeline-block timeline-block-left">
+          <div className="marker"></div>
+          <div className="timeline-content">
+            <h3>2020-2021</h3>
+            <h5 className="mb-2 text-dark">Internship, 2 months </h5>
+            <p>
+              Montreal, Canada
+              <br />
+              Creating and developing websites using
+              <br />
+             MERN stack
+            </p>
+          </div>
+              </div>
+              
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
           <div className="timeline-content">

@@ -13,7 +13,7 @@ const AboutMe = () => {
         <div className="col-lg-6 col-xm-12 text-center">
           <h1 className="about-heading mb-5">about me</h1>
           <p id="about-me-parag" className="h5">
-            A full-stack web developer who is motivated by challenges. Positive,
+            My name is Vitalii Lushyn and I am a front-end developer who is motivated by challenges. Positive,
             energetic and eager to learn to accomplish the set goal. Able to
             bring my experience to your company where I can contribute to
             designing and developing successful software. With several years of
