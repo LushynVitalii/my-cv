@@ -11,7 +11,7 @@ const Experience = () => {
           <div className="timeline-block timeline-block-left">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2020-2021</h3>
+            <h3>2021</h3>
             <h5 className="mb-2 text-dark">Internship, 2 months </h5>
             <p>
               Montreal, Canada
