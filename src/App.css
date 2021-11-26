@@ -34,8 +34,13 @@ nav {
 }
 
 .logo {
-  width: 12rem;
-  height: 5rem;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 /***MenuLinks***/
@@ -132,16 +137,11 @@ nav ul li {
 /***Main offer Button***/
 .btn-main-offer {
   border: 2px solid;
-  border-image: linear-gradient(150deg, #dfd242, #ec6218, #4d9f0c) 10;
+  border-image: linear-gradient(150deg, #4d9f0c, #dfd242 30px, #ec6218) 2;
   text-transform: uppercase;
-  border-radius: 0.4rem;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
   margin: 2rem;
-  -webkit-border-radius: 0.4rem;
-  -moz-border-radius: 0.4rem;
-  -ms-border-radius: 0.4rem;
-  -o-border-radius: 0.4rem;
 }
 .btn-main-offer:hover {
   color: var(--primary-white);
@@ -190,6 +190,12 @@ nav ul li {
 
 #about-me-parag {
   line-height: 1.7em;
+}
+#about {
+  min-height: 70vh;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -330,6 +336,7 @@ nav ul li {
   position: relative;
   padding: 3.125rem 0;
   overflow: auto;
+  overflow-x: hidden;
 }
 
 .experience h1 {

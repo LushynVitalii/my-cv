@@ -1,10 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import logo from "../images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useMediaQuery } from "react-responsive";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = () => {
   const isMobile = useMediaQuery({ query: `(max-width: 992px)` });
@@ -15,11 +17,18 @@ const Navbar = () => {
       inputRef.current.click();
     }
   }
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      easing: "ease",
+      once: true,
+    });
+  }, []);
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
       <div id="container-navbar" className="container">
-        <Link smooth={true} to="home" className="navbar-brand " href="#">
+        <Link smooth={true} to="home" className="navbar-brand" href="#">
           <img className="logo" src={logo} alt="logo..." />
         </Link>
         <button
@@ -37,7 +46,11 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
+            <li
+              className="nav-item active"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
               <Link
                 smooth={true}
                 to="home"
@@ -49,7 +62,7 @@ const Navbar = () => {
                 Home <span className="sr-only">(current)</span>
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" data-aos="fade-down" data-aos-delay="200">
               <Link
                 smooth={true}
                 to="about"
@@ -61,7 +74,7 @@ const Navbar = () => {
                 About me
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" data-aos="fade-down" data-aos-delay="300">
               <Link
                 smooth={true}
                 to="portfolio"
@@ -73,7 +86,7 @@ const Navbar = () => {
                 Portfolio
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" data-aos="fade-down" data-aos-delay="400">
               <Link
                 smooth={true}
                 to="experience"
@@ -86,7 +99,7 @@ const Navbar = () => {
               </Link>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item" data-aos="fade-down" data-aos-delay="500">
               <Link
                 smooth={true}
                 to="contacts"

@@ -1,6 +1,15 @@
-import React from "react";
+import React, {useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Experience = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease",
+      once: false,
+    });
+  }, []);
   return (
     <div id="experience" className="experience">
       <div className="d-flex justify-content-center my-5">
@@ -10,7 +19,8 @@ const Experience = () => {
               
           <div className="timeline-block timeline-block-left">
           <div className="marker"></div>
-          <div className="timeline-content">
+          <div className="timeline-content" data-aos="fade-right"
+              data-aos-delay="100">
             <h3>2021</h3>
             <h5 className="mb-2 text-dark">Internship, 2 months </h5>
             <p>
@@ -25,7 +35,8 @@ const Experience = () => {
               
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
-          <div className="timeline-content">
+          <div className="timeline-content" data-aos="fade-left"
+              data-aos-delay="100">
             <h3>2017-2019</h3>
             <h5 className="mb-2 text-dark">Freelancer, 1 year 8 months </h5>
             <p>
@@ -42,7 +53,8 @@ const Experience = () => {
 
         <div className="timeline-block timeline-block-left">
           <div className="marker"></div>
-          <div className="timeline-content">
+          <div className="timeline-content" data-aos="fade-right"
+              data-aos-delay="100">
             <h3>2008-2018</h3>
             <h5 className="mb-2 text-dark">Service Technician, 10 years</h5>
             <p>
@@ -59,7 +71,8 @@ const Experience = () => {
 
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
-          <div className="timeline-content">
+          <div className="timeline-content" data-aos="fade-left"
+              data-aos-delay="100">
             <h3>2005-2008</h3>
             <h5 className="mb-2 text-dark">
               Process operator, 3 years 6 months

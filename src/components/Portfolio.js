@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { faDesktop, faFileCode } from "@fortawesome/free-solid-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Portfolio = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+      easing: "ease",
+      once: false,
+    });
+  }, []);
   return (
     <div id="portfolio" className="portfolio">
       <div className="py-5">
@@ -11,6 +20,8 @@ const Portfolio = () => {
           <h1 className="mb-5">Portfolio</h1>
           <div id="projectsWrapper" className="row">
             <div
+              data-aos="fade-in"
+              data-aos-delay="100"
               className="col-md-4 col-sm-12 project__card1"
               style={{ position: "relative" }}
             >
@@ -36,6 +47,8 @@ const Portfolio = () => {
               </a>
             </div>
             <div
+              data-aos="fade-in"
+              data-aos-delay="200"
               className="col-md-4 col-sm-12 project__card2"
               style={{ position: "relative" }}
             >
@@ -60,7 +73,11 @@ const Portfolio = () => {
                 <div className="portfolio-proj2" />
               </a>
             </div>
-            <div className="col-md-4 col-sm-12">
+            <div
+              data-aos="fade-in"
+              data-aos-delay="300"
+              className="col-md-4 col-sm-12"
+            >
               <div className="box">
                 <div className="circle">
                   <FontAwesomeIcon className="icon" icon={faGoogle} size="2x" />
