@@ -67,7 +67,7 @@ const Navbar = () => {
                 smooth={true}
                 to="about"
                 onClick={hideNav}
-                offset={-110}
+                offset={-75}
                 className="nav-link"
                 href="#"
               >
@@ -79,7 +79,7 @@ const Navbar = () => {
                 smooth={true}
                 to="portfolio"
                 onClick={hideNav}
-                offset={-100}
+                offset={-75}
                 className="nav-link"
                 href="#"
               >
@@ -91,7 +91,7 @@ const Navbar = () => {
                 smooth={true}
                 to="experience"
                 onClick={hideNav}
-                offset={-150}
+                offset={-120}
                 className="nav-link"
                 href="#"
               >
@@ -104,7 +104,7 @@ const Navbar = () => {
                 smooth={true}
                 to="contacts"
                 onClick={hideNav}
-                offset={-70}
+                offset={-60}
                 className="nav-link"
                 href="#"
               >
