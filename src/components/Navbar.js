@@ -24,6 +24,7 @@ const Navbar = () => {
       once: true,
     });
   }, []);
+  
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
