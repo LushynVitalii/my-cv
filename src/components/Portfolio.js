@@ -26,8 +26,9 @@ const Portfolio = () => {
               style={{ position: "relative" }}
             >
               <a
-                href="https://react-cafeapp.web.app/"
-                target="_blank"
+                // href="https://react-cafeapp.web.app/"
+                href="#portfolio"
+                // target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="box">
@@ -53,8 +54,9 @@ const Portfolio = () => {
               style={{ position: "relative" }}
             >
               <a
-                href="https://quotesapp-ef4e9.web.app/quotes"
-                target="_blank"
+                // href="https://quotesapp-ef4e9.web.app/quotes"
+                href="#portfolio"
+                // target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="box">

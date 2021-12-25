@@ -380,11 +380,15 @@ nav ul li {
   background: var(--primary-orange);
   margin-top: 0.825rem;
   z-index: 3;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .timeline-content {
   width: 95%;
-  padding: 0 0.9375rem;
+  padding: 0 6.7rem;
   color: var(--primary-dark-gray);
   direction: ltr;
 }
@@ -394,6 +398,13 @@ nav ul li {
   color: var(--primary-dark-gray);
   font-weight: 600;
 }
+
+@media (max-width: 1250px) {
+  .timeline-content {
+    padding: 0 0.987rem;
+  }
+}
+
 
 @media (max-width: 768px) {
   .experience {
@@ -421,7 +432,7 @@ nav ul li {
   }
 }
 
-/***Experience***/
+/***Contact Me***/
 
 .contacts {
   background: var(--primary-dark);

@@ -23,11 +23,9 @@ const AboutMe = () => {
         <div data-aos="fade-left" className="col-lg-6 col-xm-12 text-center">
           <h1 className="about-heading mb-5">about me</h1>
           <p id="about-me-parag" className="h5">
-            My name is Vitalii Lushyn and I am a front-end developer who is
-            motivated by challenges. Positive, energetic and eager to learn to
-            accomplish the set goal. Able to bring my experience to your company
-            where I can contribute to designing and developing successful
-            software. With several years of experience working for an
+          Hey, my name is Vitalii Lushyn and I am a Front End Developer who is
+            motivated by challenges. Positive, energetic and willing to learn to
+            accomplish the set goal. Eager to tackle complex problems and continue to find ways to maximize user efficiency. With several years of experience working for an
             international company, I understand the importance of high
             standards.
           </p>
