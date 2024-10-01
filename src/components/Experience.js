@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -14,47 +14,76 @@ const Experience = () => {
     <div id="experience" className="experience">
       <div className="d-flex justify-content-center my-5">
         <h1>Experience</h1>
-          </div>  
+      </div>
       <div className="container experience-wrapper">
-        
-      <div className="timeline-block timeline-block-right">
+        <div className="timeline-block timeline-block-left">
           <div className="marker"></div>
-          <div className="timeline-content" data-aos="fade-left"
-              data-aos-delay="100">
-            <h3>2021 - current</h3>
-            <h5 className="mb-2 text-dark">Jr. Front End Developer </h5>
+          <div
+            className="timeline-content"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
+            <h3>2023 - current</h3>
+            <h5 className="mb-3 text-dark">Full Stack Developer at Slushy</h5>
             <p>
-              Montreal, Canada
+              Collaborating with team of 5 to deliver end-to-end solutions
+              within startup environment. Implemented improvements and resolved
+              issues independently or with minimal guidance, using best
+              practices for optimal application performance.
               <br />
-              Developing and maintaining an amaizing application using
-              <br />
-              HTML, CSS, React, Redux.
+              <i>
+                NextJs, Tailwind, Zustand, Typescript, NestJs, DynamoDB, AWS
+              </i>
             </p>
           </div>
         </div>
-              
-          <div className="timeline-block timeline-block-left">
+        <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
-          <div className="timeline-content" data-aos="fade-right"
-              data-aos-delay="100">
+          <div
+            className="timeline-content"
+            data-aos="fade-left"
+            data-aos-delay="100"
+          >
+            <h3>2021 - 2022</h3>
+            <h5 className="mb-3 text-dark">Front End Developer at Toric</h5>
+            <p>
+              Engeneered reusable React components and conducted code
+              refactoring, resulting in improved code efficiency and
+              performance.
+              <br />
+              <i>React, Redux, Typescript, Material UI, Express.</i>
+            </p>
+          </div>
+        </div>
+
+        <div className="timeline-block timeline-block-left">
+          <div className="marker"></div>
+          <div
+            className="timeline-content"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <h3>2021</h3>
-            <h5 className="mb-2 text-dark">Internship, 2 months </h5>
+            <h5 className="mb-3 text-dark">Internship, 2 months </h5>
             <p>
               Montreal, Canada
               <br />
               Creating and developing websites using
               <br />
-             MERN stack
+              <i>MERN stack</i>
             </p>
           </div>
-              </div>
-              
+        </div>
+
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
-          <div className="timeline-content" data-aos="fade-left"
-              data-aos-delay="100">
+          <div
+            className="timeline-content"
+            data-aos="fade-left"
+            data-aos-delay="100"
+          >
             <h3>2017-2019</h3>
-            <h5 className="mb-2 text-dark">Freelancer, 1 year 8 months </h5>
+            <h5 className="mb-3 text-dark">Freelancer, 2 years 4 months </h5>
             <p>
               Ukraine
               <br />
@@ -67,10 +96,13 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="timeline-block timeline-block-left">
+        {/* <div className="timeline-block timeline-block-left">
           <div className="marker"></div>
-          <div className="timeline-content" data-aos="fade-right"
-              data-aos-delay="100">
+          <div
+            className="timeline-content"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <h3>2008-2018</h3>
             <h5 className="mb-2 text-dark">Service Technician, 10 years</h5>
             <p>
@@ -83,12 +115,15 @@ const Experience = () => {
               Supervise employee's work
             </p>
           </div>
-        </div>
+        </div> */}
 
-        <div className="timeline-block timeline-block-right">
+        {/* <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
-          <div className="timeline-content" data-aos="fade-left"
-              data-aos-delay="100">
+          <div
+            className="timeline-content"
+            data-aos="fade-left"
+            data-aos-delay="100"
+          >
             <h3>2005-2008</h3>
             <h5 className="mb-2 text-dark">
               Process operator, 3 years 6 months
@@ -101,7 +136,7 @@ const Experience = () => {
               Quality Control according to High Standards JTI Company
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
