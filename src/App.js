@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import Particles from "react-particles-js";
+// import Particles from "@tsparticles/react";
 import AboutMe from "./components/AboutMe";
 import Portfolio from "./components/Portfolio";
 import Experience from "./components/Experience";
@@ -28,15 +28,16 @@ function App() {
 
   return (
     <>
-      <Particles
-        className="particles-canvas"
-        params={{
+      {/* <Particles
+        id="tsparticles"
+        particlesLoaded={initParticlesEngine}
+        options={{
           particles: {
             number: {
               value: 20,
               density: {
                 enable: true,
-                value_area: 1300,
+                area: 1300,
               },
             },
             shape: {
@@ -48,7 +49,7 @@ function App() {
             },
           },
         }}
-      />
+      /> */}
       <Navbar />
       <Header />
       <AboutMe />

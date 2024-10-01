@@ -23,7 +23,7 @@ const AboutMe = () => {
         <div data-aos="fade-left" className="col-lg-6 col-xm-12 text-center">
           <h1 className="about-heading mb-5">about me</h1>
           <p id="about-me-parag" className="h5">
-          Hey, my name is Vitalii Lushyn and I am a Front End Developer who is
+          Hey, my name is Vitalii Lushyn and I am a Full Stack Developer who is
             motivated by challenges. Positive, energetic and willing to learn to
             accomplish the set goal. Eager to tackle complex problems and continue to find ways to maximize user efficiency. With several years of experience working for an
             international company, I understand the importance of high
